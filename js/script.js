@@ -1,6 +1,6 @@
 (function(window, document, undefined) {
 
-    var token = '529743973.a19f73e.c7f00ca7bcfb422ab09d1c592119c218',
+    var token = '529743973.41811e0.feec30ca4201478785c8f30431e42295',
     username = 'Snip_art', // rudrastyh - my username :)
     hashtag = 'snipart'
     num_photos = 16;
