@@ -1,8 +1,9 @@
 (function(window, document, undefined) {
 
-    var token = '529743973.41811e0.feec30ca4201478785c8f30431e42295',
-    username = 'Snip_art', // rudrastyh - my username :)
-    hashtag = 'snipart'
+    var token = '529743973.41811e0.8c9bd524a4bb41cc8b89620f8db71288',
+    // username = 'snip_art', // rudrastyh - my username :)
+    userid = 529743973,
+    // hashtag = 'snipart',
     num_photos = 16;
                                                      
   // $.ajax({ // the first ajax request returns the ID of user rudrastyh
@@ -38,7 +39,9 @@
   var noHash = new RegExp('#([^\\s]*)','g');
 
   $.ajax({
-    url: 'https://api.instagram.com/v1/tags/' + hashtag + '/media/recent',
+    // url: 'https://api.instagram.com/v1/tags/' + username + '/media/recent',
+    url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent',
+    // url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent',
     dataType: 'jsonp',
     type: 'GET',
     data: {access_token: token, count: num_photos},
