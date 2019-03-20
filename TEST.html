@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Snip | Art</title>
+        <meta name="author" content="Victoria Flores (for Robbin Snip)" />
+        <meta name="description" content="Snip | Art by Robbin Snip tattoo portfolio" />
+        <meta name="keywords"  content="tattoo, amsterdam, inkmaster, antiek, artist, snip" />
+        <meta name="Resource-type" content="Document" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" type="text/css"  href="css/multiscroll.css" />
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/multiscroll.responsiveExpand.limited.min.js"></script>
+        <script type="text/javascript" src="js/multiscroll.extensions.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#myContainer').multiscroll({
+                    anchors: ['first', 'second', 'third'],
+                    menu: '#menu',
+                    navigation: true,
+                    navigationTooltips: ['First', 'Second', 'Third'],
+                    css3:true,
+
+                    responsiveWidth: 1000,
+                    responsiveExpand: true,
+                    responsiveExpandKey: 'YWx2YXJvdHJpZ28uY29tX3IxaGNtVnpjRzl1YzJsMlpVVjRjR0Z1WkE9PWo4Mw==',
+
+                    afterResponsive: function(){
+                        console.log("after responsive...");
+                    },
+                    onLeave: function(index, nextIndex, direction){
+                        console.log("onLeave: index:" + index + " nextIndex:" + nextIndex + " direction:"+direction);
+                        if(index ===1){
+                            $('.section1').addClass('hideOverflow');
+                            $('body').removeClass('section1-loaded');
+                        }
+                    },
+                    afterLoad: function(anchorLink, index){
+                        if(index === 1){
+                            $('.section1').removeClass('hideOverflow');
+                            $('body').addClass('section1-loaded');
+                        }
+                    },
+                    afterRender: function(){
+                        $('body').addClass('section1-loaded');
+                    }
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+
+        <ul id="menu">
+            <li data-menuanchor="first" class="active"><a href="#first">About</a></li>
+            <li data-menuanchor="second"><a href="#second">Ink Set #1</a></li>
+            <li data-menuanchor="third"><a href="#third">Ink set #2</a></li>
+        </ul>
+
+        <div id="myContainer">
+
+            <div id="left-side" class="ms-left">
+                <div class="ms-section section1 about" id="section1-left">
+                  LEFT1
+                </div>
+                <!-- End Section 1 Left -->
+                <div class="ms-section section2" id="section2-left">
+                    <div class="wrap">
+                        <div class="leftContainer card">
+                            <div class="flex row structure">
+                                <div class="flex row structure-1">
+                                    <div class="flex element a">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="flex element b">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="flex col structure-1-2-1">
+                                        <div class="flex element c">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                        <div class="flex element d">
+                                            <div class="content">
+
+                                            </div>
+                                         </div>
+                                    </div>
+                                    <div class="flex element e">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Section 2 Left -->
+                <div class="ms-section section3" id="section3-left">
+                    <div class="wrap">
+                        <div class="leftContainer card">
+                            <div class="flex row structure">
+                                <div class="flex row structure-2">
+                                    <div class="flex element f">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="flex col structure-2-2">
+                                        <div class="flex element g">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                        <div class="flex element h">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Section 3 Left -->
+            </div>
+
+            <div id="right-side" class="ms-right">
+                <div class="ms-section section1 style" id="section1-right">
+                    RIGHT1
+                </div>
+                <!-- End Section 1 Right -->
+                <div class="ms-section section2" id="section2-right">
+                   <div class="wrap">
+                       <div class="rightContainer card">
+                            <div class="flex row structure">
+                                <div class="flex row structure-2">
+                                    <div class="flex element f">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="flex col structure-2-2">
+                                        <div class="flex element g">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                        <div class="flex element h">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Section 2 Right -->
+                <div class="ms-section section3" id="section3-right">
+                    <div class="wrap">
+                        <div class="rightContainer card">
+                            <div class="flex row structure">
+                                <div class="flex row structure-1">
+                                    <div class="flex element a">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="flex element b">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="flex col structure-1-2-1">
+                                        <div class="flex element c">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                        <div class="flex element d">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex element e">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- flex row structure-->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Section 3 Right -->
+            </div> <!-- end all RIGHT sections -->
+        </div> <!-- end container -->
+
+
+        <script type="text/javascript" src="js/script.js"></script>
+        <input type="hidden" id="_4" value="3" />
+
+    <!-- Google Analytics -->
+
+    </body>
+</html>
